@@ -1,0 +1,133 @@
+*{
+    margin: 0px ;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #262a2f;
+    font-size: 1.6rem;
+    
+}
+
+.container{
+    width:390px;
+    padding: 2.3rem;
+    position: absolute;
+    top : 43%;
+    left: 50%;
+    transform: translateX(-200px) translateY(-200px);
+    background-color: #fff;
+    box-shadow: 5px 10px 20px #000 ;
+    border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#qrText{
+    width: 100%;
+   
+    font-size: 1.1rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    /* margin :1rem 1rem; */
+    outline: 0;
+    border: 2px solid  #04AA6D;
+    
+}
+
+.input-grp{
+    width: 100%;
+    /* border: 2px solid red; */
+    letter-spacing: 1px;    
+    box-sizing: border-box;
+    margin: 1.2rem 0;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#label{
+    position: absolute;
+    top:10px;
+    left:70px;
+}
+.place + #label{
+    top: -17px;
+    color: #04AA6D;
+    background-color: #fff;
+}
+
+.placeAfter + #label{
+    top: -17px;
+    color: #04AA6D;
+    background-color: #fff;
+}
+
+
+button:active{
+    background-color:  rgba(6, 103, 239, 0.952);
+}
+
+
+
+button{
+    width: 100%;
+    letter-spacing: 2px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgba(16, 90, 194, 0.834);
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 1rem;
+}
+
+#imgBox{
+    width:200px;
+    border-radius: 5px;
+    max-height: 0;
+    border:none;
+    overflow:hidden;
+    transition: max-height 1s;
+}
+
+#imgBox img{
+    width: 100%;
+    padding: 10px ;
+}
+
+#imgBox.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+}
+.error{
+    animation : shake 0.1s linear 10;
+
+}
+
+@keyframes shake{
+    0%{
+        transform : translateX(0);
+    }
+
+    25%{
+        transform : translateX(-4px);
+    }
+
+    50%{
+        transform : translateX(0);
+    }
+
+    75%{
+        transform : translateX(-4px);
+    }
+
+    100%{
+        transform : translateX(0);
+    }
+};
